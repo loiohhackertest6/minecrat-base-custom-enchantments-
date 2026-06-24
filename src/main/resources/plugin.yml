@@ -1,0 +1,28 @@
+name: CustomEnchantments
+version: '${project.version}'
+main: org.loioh.customenchantments.CustomEnchantments
+api-version: '1.21'
+author: loioh
+website: https://www.fiverr.com/
+commands:
+  ce_reload:
+    description: reload the plugin configuration files
+    usage: /command
+    aliases: [ ce_r, cer ]
+  custom_enchant:
+    description: enchant item with custom enchantments
+    usage: /command <enchant_id> <lvl>
+    aliases: [ ce, cenchant ]
+  effectFromList:
+    description: ability command
+    usage: /command <player_name> <lint_path> <duration>
+    aliases: [ effectfl, effectFL ]
+
+permissions:
+  customenchantments.commands.enchant:
+    description: allow use /ce_reload
+    #default: op
+  customenchantments.commands.reset:
+    description: allow use /custom_enchan
+  customenchantments.commands.effect:
+    description: allow use /effectfromlist
